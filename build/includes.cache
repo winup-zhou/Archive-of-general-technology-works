@@ -1,0 +1,52 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "E:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "E:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\eightanaloginputs"
+  },
+  {
+    "Sourcefile": "c:\\Users\\Administrator\\Desktop\\通用技术作品资料\\build\\sketch\\code.ino.cpp",
+    "Include": "LiquidCrystal_I2C.h",
+    "Includepath": "E:\\Program Files (x86)\\Arduino\\libraries\\LiquidCrystal_I2C-master"
+  },
+  {
+    "Sourcefile": "c:\\Users\\Administrator\\Desktop\\通用技术作品资料\\build\\sketch\\code.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "E:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\Wire\\src"
+  },
+  {
+    "Sourcefile": "c:\\Users\\Administrator\\Desktop\\通用技术作品资料\\build\\sketch\\code.ino.cpp",
+    "Include": "dht11.h",
+    "Includepath": "E:\\Program Files (x86)\\Arduino\\libraries\\Dht11"
+  },
+  {
+    "Sourcefile": "c:\\Users\\Administrator\\Desktop\\通用技术作品资料\\build\\sketch\\code.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "E:\\Program Files (x86)\\Arduino\\libraries\\LiquidCrystal_I2C-master\\LiquidCrystal_I2C.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "E:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\Wire\\src\\Wire.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "E:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\Wire\\src\\utility\\twi.c",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "E:\\Program Files (x86)\\Arduino\\libraries\\Dht11\\dht11.cpp",
+    "Include": "",
+    "Includepath": ""
+  }
+]

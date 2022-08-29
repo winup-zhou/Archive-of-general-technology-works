@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "",
+  "builtInLibrariesFolders": "E:\\Program Files (x86)\\Arduino\\libraries",
+  "customBuildProperties": "build.path=c:\\Users\\Administrator\\Desktop\\通用技术作品资料\\build,build.warn_data_percentage=75,runtime.tools.arduinoOTA.path=E:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,runtime.tools.arduinoOTA-1.2.1.path=E:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,runtime.tools.avrdude.path=E:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,runtime.tools.avrdude-6.3.0-arduino14.path=E:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,runtime.tools.avr-gcc.path=E:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,runtime.tools.avr-gcc-5.4.0-atmel3.6.1-arduino2.path=E:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr",
+  "fqbn": "arduino:avr:nano:cpu=atmega328old",
+  "hardwareFolders": "E:\\Program Files (x86)\\Arduino\\hardware",
+  "otherLibrariesFolders": "C:\\Users\\Administrator\\Documents\\Arduino\\libraries",
+  "runtime.ide.version": "10809",
+  "sketchLocation": "c:\\Users\\Administrator\\Desktop\\通用技术作品资料\\通用技术作品源码\\code\\code.ino",
+  "toolsFolders": "E:\\Program Files (x86)\\Arduino\\tools-builder,E:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr"
+}
