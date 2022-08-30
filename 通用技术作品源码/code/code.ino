@@ -2,7 +2,7 @@
 #include <dht11.h>
 #include <Wire.h>
 double settemp = 26.0;
-int lcdst(0), lcdbl1(0), lcdbl2(0), rlydelay(0), STATUS_(0);
+int lcdst(0), lcdbl1(0), lcdbl2(0), rlydelay(0), STATUS_(3);
 double Fahrenheit(double celsius)
 {
     return 1.8 * celsius + 32;
@@ -93,9 +93,10 @@ void loop()
         lcd.print("  Sensor Error  ");
         lcd.setCursor(0, 1);
         lcd.print(" Checksum error ");
-        digitalWrite(4, LOW);
+        digitalWrite(4, HIGH);
         digitalWrite(10, LOW);
         digitalWrite(5, HIGH);
+        digitalWrite(6, HIGH);
         tone(3, 900, 500);
         Serial.println("Checksum error");
         delay(2000);
@@ -107,9 +108,10 @@ void loop()
         lcd.print("  Sensor Error  ");
         lcd.setCursor(0, 1);
         lcd.print(" Time out error ");
-        digitalWrite(4, LOW);
+        digitalWrite(4, HIGH);
         digitalWrite(10, LOW);
         digitalWrite(5, HIGH);
+        digitalWrite(6, HIGH);
         tone(3, 900, 500);
         Serial.println("Time out error");
         delay(2000);
@@ -121,9 +123,10 @@ void loop()
         lcd.print("  Sensor Error  ");
         lcd.setCursor(0, 1);
         lcd.print(" Unknown  error ");
-        digitalWrite(4, LOW);
+        digitalWrite(4, HIGH);
         digitalWrite(10, LOW);
         digitalWrite(5, HIGH);
+        digitalWrite(6, HIGH);
         tone(3, 900, 500);
         Serial.println("Unknown error");
         delay(2000);
@@ -179,24 +182,28 @@ void loop()
             if (STATUS_ == 0)
             {
                 digitalWrite(6, LOW);
+                digitalWrite(5, LOW);
                 lcd.setCursor(0, 1);
                 lcd.print("RLY Control: OFF");
             }
             else if (STATUS_ == 1)
             {
+                digitalWrite(5, LOW);
                 digitalWrite(6, HIGH);
                 lcd.setCursor(0, 1);
                 lcd.print("RLY Control:COOL");
             }
             else if (STATUS_ == 2)
             {
-                digitalWrite(6, HIGH);
+                digitalWrite(6, LOW);
+                digitalWrite(5, HIGH);
                 lcd.setCursor(0, 1);
                 lcd.print("RLY Control:HEAT");
             }
             else
             {
                 digitalWrite(6, LOW);
+                digitalWrite(5, LOW);
                 lcd.setCursor(0, 1);
                 lcd.print("RLY Control:  NO");
             }
@@ -279,12 +286,16 @@ void loop()
         {
             digitalWrite(10, HIGH);
             digitalWrite(4, HIGH);
+            Serial.print("RLY1 Status: ");
+            Serial.println("ON");
             rlydelay = 300;
         }
         else
         {
             digitalWrite(10, LOW);
             digitalWrite(4, LOW);
+            Serial.print("RLY1 Status: ");
+            Serial.println("OFF");
             rlydelay = 300;
         }
     }
@@ -294,12 +305,16 @@ void loop()
         {
             digitalWrite(10, HIGH);
             digitalWrite(4, HIGH);
+            Serial.print("RLY1 Status: ");
+            Serial.println("ON");
             rlydelay = 300;
         }
         else
         {
             digitalWrite(10, LOW);
             digitalWrite(4, LOW);
+            Serial.print("RLY1 Status: ");
+            Serial.println("OFF");
             rlydelay = 300;
         }
     }
